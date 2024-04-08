@@ -1,0 +1,87 @@
+
+@media(min-width: 600px){
+    .profile{
+        width: 600px;
+        display: flex;
+        margin: 60px auto;
+        gap: 18px;
+        align-items: center;
+    }
+    .user{
+        height: 200px;
+        border-radius: 12px;
+        transition: .4s;
+    }
+}
+
+@media(max-width: 599px){
+    .profile{
+        text-align: center;
+        margin: 60px auto;
+        /* gap: 18px; */
+        align-items: center;
+    }
+    .user{
+        height: 150px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    .btn{
+        background-color: blueviolet;
+        color: white;
+        padding: 16px 30px;
+        border: none;
+        font-size: 16px;
+        border-radius: 60px;
+        transition: .4s;
+    }
+    .title{
+        transition: .4s;
+        margin-top: 24px;
+    } 
+}
+
+
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 16px 30px;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.title{
+    transition: .4s;
+    margin-top: 0;
+}
+
+/* box css */
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    color: coral;
+    background-color: rgb(83, 156, 158);
+    margin: 10px auto;
+    animation-name: box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;    
+}
+
+
+@keyframes box {
+    to{
+        margin-right: 30px;
+        background-color: blueviolet;
+        border-radius: 50%; 
+        transform: rotate(360deg);
+    }
+}
